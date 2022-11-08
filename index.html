@@ -15,8 +15,10 @@
   <META NAME="Description" CONTENT="">
 
   <style>
+
+ 
     .text-view {
-      color: pink;
+      color: red;
       display: flex;
       justify-content: center;
       text-align: center;
@@ -53,10 +55,12 @@
 
 <BODY>
 
-  <h2 class="text-view">Đừng stress nữa nhaaaaa 💖</h2>
-  <h2 class="text-view">Cố lên 💪💪💪</h2>
+  <!-- <h2 class="text-view">Đừng stress nữa nhaaaaa 💖</h2>
+  <h2 class="text-view">Cố lên 💪💪💪</h2> -->
+   <div class="box">
 
-  <canvas id="pinkboard"></canvas>
+     <canvas id="pinkboard"></canvas>
+   </div> 
 
   <script>
 
@@ -70,15 +74,15 @@
 
       particles: {
 
-        length: 500, // maximum amount of particles
+        length: 5000, // maximum amount of particles
 
-        duration: 2, // particle duration in sec
+        duration: 4, // particle duration in sec
 
-        velocity: 100, // particle velocity in pixels/sec
+        velocity: 120, // particle velocity in pixels/sec
 
-        effect: -0.75, // play with this for a nice effect
+        effect: -1.2, // play with this for a nice effect
 
-        size: 30, // particle size in pixels
+        size: 12, // particle size in pixels
 
       },
 
@@ -431,7 +435,7 @@
 
         // create the fill
 
-        context.fillStyle = '#ea80b0';
+        context.fillStyle = 'red';
 
         context.fill();
 
