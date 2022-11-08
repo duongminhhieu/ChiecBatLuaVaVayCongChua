@@ -39,15 +39,47 @@
 
     }
 
+
+    .box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
     canvas {
 
       position: absolute;
 
-      width: 100%;
+      width: 80%;
 
-      height: 100%;
+      height: 80%;
 
     }
+
+    
+
+    @keyframes animate {
+      0%{
+        transform: scale(1);
+      }
+      30%{
+        transform: scale(0.8);
+      }
+      60%{
+        transform: scale(1.2);
+      }
+      100%{
+        transform: scale(1);
+      }
+    }
+
+    #pinkboard{
+      animation: animate 1.2s infinite;
+    }
+
   </style>
 
 </HEAD>
@@ -55,12 +87,14 @@
 
 <BODY>
 
-  <!-- <h2 class="text-view">Đừng stress nữa nhaaaaa 💖</h2>
-  <h2 class="text-view">Cố lên 💪💪💪</h2> -->
-   <div class="box">
+  <h2 class="text-view">Đừng stress nữa nhaaaaa 💖</h2>
+  <h2 class="text-view">Cố lên 💪💪💪</h2>
 
-     <canvas id="pinkboard"></canvas>
-   </div> 
+  <div class="box">
+    <canvas id="pinkboard"></canvas>
+
+  </div>
+
 
   <script>
 
